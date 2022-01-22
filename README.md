@@ -7,7 +7,7 @@ files if desired.
 We observed this program is needed as in the endpoints that I use
 and accesses a Globus server the service gets interrupted but does not fail. 
 Hence, the transfer never finishes. With this commandline tool 
-and does not contthe issue could be solved.
+the issue could be solved.
 
 Please take a look at our example.
 
