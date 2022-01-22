@@ -36,9 +36,11 @@ let us know how you do it as I do not have a Windows machine available.
 ## Usage
 
 ```
-globus login FROM_EP TO_EP
-globus transfer FROM_EP TO_EP DIR FROM TO [--mkdir=no] [--tar] [--force] [--dryrun]
-globus transfer FROM_EP TO_EP DIR --file=FILE TO [--mkdir=no] [--run=1:100] [--tar] [--force] [--dryrun]
+cms help
+cms help globus
+cms globus login FROM_EP TO_EP
+cms globus transfer FROM_EP TO_EP DIR FROM TO [--mkdir=no] [--tar] [--force] [--dryrun]
+cms globus transfer FROM_EP TO_EP DIR --file=FILE TO [--mkdir=no] [--run=1:100] [--tar] [--force] [--dryrun]
 
 Arguments:
 FROM_EP   the globus endpoint to transfer the file from
