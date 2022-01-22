@@ -28,7 +28,6 @@ jmespath==0.10.0
 md-toc==8.1.0
 munch==2.5.0
 oyaml==1.0
-pathlib==1.0.1
 psutil==5.9.0
 pycparser==2.21
 pyfiglet==0.8.post1
