@@ -69,7 +69,7 @@ Options:
 
 Description:
 
-globus transfer FROM_EP TO_EP DIR FROM TO [--mkdir=no] [--tar]
+cms globus transfer FROM_EP TO_EP DIR FROM TO [--mkdir=no] [--tar]
 
 This command is a convenience wrapper for the globus command
 allowing the transfer of relative directories towards a source
