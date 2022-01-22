@@ -1,8 +1,30 @@
-Documentation
-=============
+# Cloudmesh Globus
+
+## Installation
+
+### Mac/Linux
+
+```bash
+python3.10 -m venv ~/GLOBUS
+source ~/GLOBUS/bin/activate
+pip install cloudmesh-globus
+cms help
+cms globus help
+```
+
+Calling the command cms help directly after the pip install
+is very important as it sets up some directories and files
+
+
+### Windows
+
+This will work on windows, but the creation of the venv is different.
+let us know how you do it as I do not have a Windows machine available.
+
+
+## Usage
 
 ```
-Usage:
 globus login FROM_EP TO_EP
 globus transfer FROM_EP TO_EP DIR FROM TO [--mkdir=no] [--tar] [--force] [--dryrun]
 globus transfer FROM_EP TO_EP DIR --file=FILE TO [--mkdir=no] [--run=1:100] [--tar] [--force] [--dryrun]
