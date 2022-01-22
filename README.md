@@ -81,14 +81,15 @@ exist and is not explicitly created. If it does not exist the program
 will be terminated.
 
 bookmarks
+
 bookmarks can be stored in a file called
-~/.cloudmesh/globus.yaml
+`~/.cloudmesh/globus.yaml`
 
 let us assume the file contains
 
 bookmark:
-uva: c4d80096-7612-11e7-8b5e-22000b9923ef
-laptoa: 1a1a1a1--7612-11e7-8b5e-22000b9923ef
+  uva: c4d80096-7612-11e7-8b5e-22000b9923ef
+  laptop: 1a1a1a1--7612-11e7-8b5e-22000b9923ef
 
 then you can use the keyword uva for an endpoint in the command
 
