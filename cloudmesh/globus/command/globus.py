@@ -177,7 +177,7 @@ class GlobusCommand(PluginCommand):
                 if ":" in arguments["--run"]:
                     i_start, i_end = arguments["--run"].split(":")
                     i_start = int(i_start) - 1
-                    i_end = int(i_end) 
+                    i_end = int(i_end)
                 else:
                     i_start = i_end = arguments["--run"]
                     i_start = int(i_start) - 1
