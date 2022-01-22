@@ -27,6 +27,17 @@ class Globus:
         else:
             return name
 
+    def version(self):
+        r = Shell.run("globus version").strip()
+        return r
+
+    def logout(self):
+        r = Shell.run("globus logout --yes").strip()
+        return r
+
+    def whoami(self):
+        r = Shell.run("globus whoami").strip()
+        return r
 
     def info(self):
         print(79*"=")
@@ -44,17 +55,21 @@ class Globus:
         r = Shell.run(mkdir)
         if "Path already exists, Error (mkdir)" in r:
             Console.ok("Path exists. ok")
+            return 0
         elif "The directory was created successfully" in rsa:
             Console.ok("Path created. ok")
+            return 0
         else:
             Console.error("mkdir error")
             Console.error(str(r))
+        return 1 # error
 
-    def transfer(self, source, destination, label="cloudmesh transfer"):
-        command = f"globus transfer {source} {destination}" \
-                  f' --recursive --label "{label}"'
+    def transfer(self, source, destination, label="cloudmesh transfer", recursive="--recursive"):
+
+        command = f"globus transfer" \
+                  f" --fail-on-quota-errors --skip-source-errors --preserve-mtime --notify off "\
+                  f" {source} {destination}" \
+                  f' {recursive} --label "{label}"'
         print(command)
-
-
 
         os.system(command)
